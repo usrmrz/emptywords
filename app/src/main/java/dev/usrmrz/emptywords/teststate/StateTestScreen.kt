@@ -17,13 +17,10 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.sp
 
 //remember -> persist state on recomposition
-//rememberSaveable -> persist even on configuration changed
 
 @Composable
 fun StateTestScreen() {
-    var name by remember {
-        mutableStateOf("")
-    }
+    var name by remember { mutableStateOf("") }
     Column(
         modifier = Modifier.fillMaxSize(),
         verticalArrangement = Arrangement.Center,
